@@ -1,0 +1,20 @@
+{
+  "name": "distortions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
+  },
+  "author": "Idrak",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "next": "^9.0.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
