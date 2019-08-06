@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Main from '../layouts/main';
+import Slideshow from '../components/Slideshow';
 
 class Home extends Component {
     render () {
@@ -45,8 +46,10 @@ class Home extends Component {
                         </div>
                     </div>
                     <br/>
+                    <h1>Gallery</h1>
                     <hr/>
-                    
+                    <br/>
+                    <Slideshow/>
                 </div>
             </Main>
         );
