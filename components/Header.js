@@ -13,7 +13,7 @@ const Header = props => {
     return (
         <div className="Header">
             <div className="navbar">
-                <a onClick={toggleNavbar} href="/"><img className="bars" src="https://cdn4.iconfinder.com/data/icons/social-messaging-productivity-black-4/127000/18-512.png"/></a> <img className="logo" src="../static/logo.png"/> <a href="#"><img src="https://media.giphy.com/media/fqb5mQi7eHcqUxv2TK/giphy.gif" className="cart"/></a>
+                <a onClick={toggleNavbar} href="/"><img className="bars" src="https://cdn4.iconfinder.com/data/icons/social-messaging-productivity-black-4/127000/18-512.png"/></a> <img className="logo" src="../static/logo.png"/> <a href="/shop"><img src="https://media.giphy.com/media/fqb5mQi7eHcqUxv2TK/giphy.gif" className="cart"/></a>
             </div>
             <div className="nav">
                 <ul>
@@ -21,6 +21,9 @@ const Header = props => {
                     <li><a href="/login">Login</a></li>
                     <li><a href="/shop">Shop</a></li>
                     <li><a href="/about">About Son Junwoo</a></li>
+                    <br/>
+                    <br/>
+                    <li>{props.email}</li>
                 </ul>
             </div>
             <div className="row">

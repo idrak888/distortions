@@ -119,6 +119,37 @@
         width: 90%;
     }
 }
-.Shop .Header .row, .About .Header .row {
+.Shop .Header .row, .About .Header .row, .Login .Header .row, .SignUp .Header .row{
     display: none;
+}
+.Shop .wrapper {
+    padding: 200px 20px;
+    text-align: center;
+}
+.Shop .btn {
+    font-size: x-large;
+    width: 300px;
+}
+.Footer {
+    background-color: rgb(22, 22, 42);
+    width: 100%;
+    padding: 60px;
+    color: white;
+    text-align: center;
+}
+.Login .wrapper, .SignUp .wrapper {
+    text-align: center;
+    padding: 100px 20px;
+}
+.Login input, .SignUp input, .SignUp .btn, .Login .btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 6px;
+    font-size: 20px;
+}
+.Login hr, .SignUp hr {
+    width: 200px;
+}
+.Login .wrapper a, .SignUp .wrapper a {
+    font-size: 23px;
 }

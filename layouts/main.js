@@ -1,5 +1,28 @@
 import Header from '../components/Header';
 import Head from 'next/head';
+import Footer from '../components/Footer';
+import * as firebase from 'firebase';
+
+var firebaseConfig = {
+    apiKey: "AIzaSyC9vWR8G_v1xIgHFyFAxIc1HmAm5YuM7CM",
+    authDomain: "distortions-7090c.firebaseapp.com",
+    databaseURL: "https://distortions-7090c.firebaseio.com",
+    projectId: "distortions-7090c",
+    storageBucket: "",
+    messagingSenderId: "281460861490",
+    appId: "1:281460861490:web:d0d8610ee4b3be8a7faa2b"
+};
+if (!firebase.apps.length) {
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+}
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+        localStorage.setItem('email', user.email);
+    } else {
+        localStorage.setItem('email', '');
+    }
+});
 
 export default ({ children }) => (
   <div>
@@ -27,7 +50,8 @@ export default ({ children }) => (
             <title>Distortions</title>
         </Head>
         
-        <Header />
+        <Header/>
         { children }
+        <Footer />
     </div>
 )
